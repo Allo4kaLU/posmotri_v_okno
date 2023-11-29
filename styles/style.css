@@ -38,7 +38,6 @@ ol {
 }
 
 .content {
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -59,13 +58,13 @@ ol {
   block-size: 298px;
   overflow: scroll;
   overflow-x: hidden;
-  margin-block-start: 30px;
+  margin-block-start: 20px;
   position: relative;
 }
 
 .content__details {
-  inline-size: 100%;
-  block-size: 100%;
+  inline-size: 399px;
+  block-size: 529px;
 }
 
 .result__video-container {
@@ -79,6 +78,7 @@ ol {
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__list-item {
@@ -114,6 +114,7 @@ ol {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 5px;
 }
 
 .title {
@@ -177,8 +178,8 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  width: 212px;
   justify-content: space-between;
+  gap: 12px;
 }
 
 .search-form__textfield {
@@ -202,8 +203,8 @@ ol {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  inline-size: 19px;
-  block-size: 19px;
+  inline-size: 17px;
+  block-size: 17px;
   outline: 1px solid #fff;
   background-color: transparent;
 }
