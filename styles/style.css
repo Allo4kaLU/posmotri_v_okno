@@ -59,7 +59,8 @@ ol {
   flex-direction: column;
   align-items: flex-start;
   block-size: 298px;
-  overflow: scroll;
+  min-inline-size: 394px;
+  overflow: auto;
   overflow-x: hidden;
   margin-block-start: 20px;
   position: relative;
@@ -102,9 +103,10 @@ ol {
 }
 
 .content__video-card-thumbnail {
+  object-fit: cover;
+  object-position: center;
   inline-size: 194px;
   block-size: 103px;
-  background: url(../images/preview.png);
 }
 
 .content__video-card-description-container {
@@ -121,7 +123,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -142,7 +144,8 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  margin-block-end: 6px;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 100%;
@@ -151,7 +154,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 90%;
@@ -189,7 +192,7 @@ ol {
   appearance: none;
   min-inline-size: 225px;
   block-size: 27px;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: rgba (255, 255, 255/0.7);
@@ -227,7 +230,7 @@ ol {
   cursor: pointer;
   background-color: transparent;
   color: #fff;
-  font-family: "Fira Sans Condensed" sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -250,14 +253,22 @@ ol {
 .search-form__textfield:active {
   border-block-start: 0px;
   border-block-end: 0px;
+  color: #fff;
 }
 
 .search-form__textfield:focus {
   outline: none;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .search-form__label:has(:focus-visible) {
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -279,6 +290,7 @@ ol {
 
 .button:focus-visible {
   outline: 1px double #fff;
+  outline-offset: 2px;
 }
 
 .content__card-link_current {
